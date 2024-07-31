@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MyFirstIsmailiaApp</string>
     <string name="boarding_pass_advice">You will be able to view the ride details and track it during its time until reaching the destination</string>
+    <string name="driverName">Abanob Fayeq Boktor Aboaliman</string>
 </resources>
