@@ -4,4 +4,10 @@
     <string name="driverName">Abanob Fayeq Boktor Aboaliman</string>
     <string name="to_station">To Station</string>
     <string name="cancel_trip">Cancel Trip?</string>
+    <string name="signout">Sign Out</string>
+    <string name="notifications">Notifications</string>
+    <string name="ic_trips">Trips</string>
+    <string name="nav_open">open</string>
+    <string name="nav_close">close</string>
+    <string name="overFlowMenu">Overflow Menu</string>
 </resources>
