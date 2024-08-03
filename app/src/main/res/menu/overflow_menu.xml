@@ -9,6 +9,7 @@
         android:icon="@drawable/ic_edit"
         android:title="@string/edit" />
     <item
+        android:id="@+id/remove_item_id"
         android:icon="@drawable/ic_remove"
         android:title="@string/remove" />
 </menu>
