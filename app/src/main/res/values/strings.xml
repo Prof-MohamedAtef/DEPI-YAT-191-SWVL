@@ -13,5 +13,7 @@
     <string name="trip_id">Trip ID:</string>
     <string name="enter_trip_id">Enter Trip Id:</string>
     <string name="send_data">send data</string>
+    <string name="greeting_user">Hey, Mohamed</string>
+    <string name="where_going">Where are you going?</string>
 
 </resources>
