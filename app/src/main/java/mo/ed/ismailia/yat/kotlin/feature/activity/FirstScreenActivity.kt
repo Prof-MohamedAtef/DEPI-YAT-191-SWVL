@@ -1,4 +1,4 @@
-package mo.ed.ismailia.yat.kotlin.view.activity
+package mo.ed.ismailia.yat.kotlin.feature.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import mo.ed.ismailia.yat.kotlin.R
+import mo.ed.ismailia.yat.kotlin.feature.model.Trip
 
 class FirstScreenActivity : AppCompatActivity() {
     lateinit var sendDataBTN: Button
@@ -29,7 +30,7 @@ class FirstScreenActivity : AppCompatActivity() {
 //            Intent
 
             val intent = Intent(this, SecondScreenActivity::class.java).apply {
-                putExtra("tripId", tripID.toString())
+//                putExtra("tripId", tripID.toString())
             }
 
             /*
@@ -38,9 +39,11 @@ class FirstScreenActivity : AppCompatActivity() {
             val bundle = Bundle()
             bundle.putInt("CarNumber", 5060)
 
+            val trip = Trip(tripID.toString(),"50:00PM","07:00PM","Yasser","Ismailia","Cairo")
+            bundle.putSerializable("TRIP_KEY", trip)
             /*
             Serializable Data
-            Parcelable Data
+            Parcelable Data - overview
              */
 
             intent.putExtras(bundle)
