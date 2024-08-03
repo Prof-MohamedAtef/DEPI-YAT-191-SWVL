@@ -1,13 +1,16 @@
 package mo.ed.ismailia.yat.kotlin.feature.activity.overflow
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import mo.ed.ismailia.yat.kotlin.R
+import mo.ed.ismailia.yat.kotlin.feature.activity.search.SearchViewActivity
 
 class OverFlowMenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,14 +39,16 @@ class OverFlowMenuActivity : AppCompatActivity() {
     }
 
     private fun openRemoveView() {
-
+        Toast.makeText(this, "Removing ..", Toast.LENGTH_SHORT).show()
     }
 
     private fun openEditView() {
-
+        Toast.makeText(this, "Editing ..", Toast.LENGTH_SHORT).show()
     }
 
     private fun openSearchView() {
+        val intent = Intent(this, SearchViewActivity::class.java)
+        startActivity(intent)
 
     }
 }

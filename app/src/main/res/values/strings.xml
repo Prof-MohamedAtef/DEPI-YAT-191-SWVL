@@ -16,6 +16,7 @@
     <string name="greeting_user">Hey, Mohamed</string>
     <string name="where_going">Where are you going?</string>
     <string name="search">Search</string>
+    <string name="search_view_hint">Search Here ...</string>
     <string name="edit">Edit</string>
     <string name="remove">Remove</string>
 

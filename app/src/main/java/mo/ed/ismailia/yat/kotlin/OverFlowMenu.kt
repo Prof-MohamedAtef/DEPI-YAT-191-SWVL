@@ -30,9 +30,9 @@ class OverFlowMenu : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId){
-            R.id.edit -> Toast.makeText(this,"Edit",Toast.LENGTH_SHORT).show()
-            R.id.remove -> Toast.makeText(this,"Remove",Toast.LENGTH_SHORT).show()
-            R.id.search -> searchWeb(item)
+            R.id.edit_menu_id -> Toast.makeText(this,"Edit",Toast.LENGTH_SHORT).show()
+            R.id.remove_item_id -> Toast.makeText(this,"Remove",Toast.LENGTH_SHORT).show()
+            R.id.search_menu_id -> searchWeb(item)
         }
         return super.onOptionsItemSelected(item)
     }

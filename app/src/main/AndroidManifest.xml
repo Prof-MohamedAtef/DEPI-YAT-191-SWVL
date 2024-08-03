@@ -13,6 +13,10 @@
         android:theme="@style/MaterialCoBridgeTheme"
         tools:targetApi="31">
         <activity
+            android:name=".feature.activity.search.SearchViewActivity"
+            android:exported="false" />
+        <activity
+            android:theme="@style/AppActionBarTheme"
             android:name=".feature.activity.overflow.OverFlowMenuActivity"
             android:exported="false" />
         <activity
@@ -29,7 +33,7 @@
             android:exported="false" />
         <activity
             android:name=".feature.activity.FirstScreenActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
