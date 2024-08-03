@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import mo.ed.ismailia.yat.kotlin.R
+import mo.ed.ismailia.yat.kotlin.feature.fragment.DrawerFragment
 import mo.ed.ismailia.yat.kotlin.feature.fragment.GreetingsFragment
 
 class SwvlHomeActivity : AppCompatActivity() {
@@ -15,11 +16,16 @@ class SwvlHomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_swvl_home)
 
         val greetingsFragment = GreetingsFragment()
+        val drawerFragment = DrawerFragment()
         /*
         Fragment Manager
          */
         supportFragmentManager.beginTransaction()
             .add(R.id.greetingsFrame, greetingsFragment)
             .commitAllowingStateLoss()
+
+        supportFragmentManager.beginTransaction()
+            .add(R.id.drawerFrame, drawerFragment)
+            .commit()
     }
 }
