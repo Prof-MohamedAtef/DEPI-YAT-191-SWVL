@@ -17,6 +17,7 @@ import com.google.android.material.navigation.NavigationView
 import kotlinx.coroutines.NonCancellable
 import mo.ed.ismailia.yat.kotlin.R
 import mo.ed.ismailia.yat.kotlin.feature.activity.overflow.OverFlowMenuActivity
+import mo.ed.ismailia.yat.kotlin.feature.activity.swvl.view.fragment.CitiesFragment
 import mo.ed.ismailia.yat.kotlin.feature.fragment.DrawerFragment
 import mo.ed.ismailia.yat.kotlin.feature.fragment.GreetingsFragment
 import kotlin.math.truncate
@@ -26,6 +27,8 @@ class SwvlHomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
     lateinit var actionBarDrawerToggle: ActionBarDrawerToggle
     lateinit var toolbar: Toolbar
     lateinit var navigationView: NavigationView
+
+    //citiesFrame
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -68,6 +71,7 @@ class SwvlHomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
 //            startActivity(intent)
 //        }
         val greetingsFragment = GreetingsFragment()
+        val citiesFragment = CitiesFragment()
 
         /*
         Fragment Manager
@@ -76,6 +80,9 @@ class SwvlHomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
             .add(R.id.greetingsFrame, greetingsFragment)
             .commitAllowingStateLoss()
 
+        supportFragmentManager.beginTransaction()
+            .add(R.id.citiesFrame, citiesFragment)
+            .commitAllowingStateLoss()
 
 
 
