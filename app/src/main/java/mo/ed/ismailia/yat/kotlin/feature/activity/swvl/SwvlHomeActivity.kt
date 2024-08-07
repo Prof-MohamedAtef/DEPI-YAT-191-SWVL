@@ -26,7 +26,6 @@ class SwvlHomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
     lateinit var actionBarDrawerToggle: ActionBarDrawerToggle
     lateinit var toolbar: Toolbar
     lateinit var navigationView: NavigationView
-//    lateinit var overflowLauncher: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -79,7 +78,7 @@ class SwvlHomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
 
 
 
-//        overflowLauncher = findViewById(R.id.overflowLauncher)
+
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
