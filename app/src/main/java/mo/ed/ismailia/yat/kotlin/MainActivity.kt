@@ -56,12 +56,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            R.id.trips -> Toast.makeText(this, "Trips", Toast.LENGTH_SHORT).show()
-            R.id.notifications -> Toast.makeText(this, "Notifications", Toast.LENGTH_SHORT).show()
-            R.id.overFlow -> openOverFlowScreen()
-            R.id.sign_out -> Toast.makeText(this, "Sign Out", Toast.LENGTH_SHORT).show()
-        }
+//        when(item.itemId){
+//            R.id.trips -> Toast.makeText(this, "Trips", Toast.LENGTH_SHORT).show()
+//            R.id.notifications -> Toast.makeText(this, "Notifications", Toast.LENGTH_SHORT).show()
+//            R.id.overFlow -> openOverFlowScreen()
+//            R.id.sign_out -> Toast.makeText(this, "Sign Out", Toast.LENGTH_SHORT).show()
+//        }
         return true
     }
 

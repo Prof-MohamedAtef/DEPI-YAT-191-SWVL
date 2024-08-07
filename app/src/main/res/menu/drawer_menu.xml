@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/trips"
-        android:icon="@drawable/ic_trips"
-        android:title="@string/ic_trips"/>
+        android:id="@+id/your_trips_menu_id"
+        android:title="@string/your_trips" />
     <item
-        android:id="@+id/notifications"
-        android:icon="@drawable/ic_notifications"
-        android:title="@string/notifications"/>
+        android:id="@+id/wallet_menu_id"
+        android:title="@string/wallet" />
     <item
-        android:id="@+id/overFlow"
-        android:icon="@drawable/ic_notifications"
-        android:title="@string/overFlowMenu"/>
+        android:id="@+id/payment_menu_id"
+        android:title="@string/payment" />
     <item
-        android:id="@+id/sign_out"
-        android:icon="@drawable/ic_signout"
-        android:title="@string/signout"/>
+        android:id="@+id/your_packages_menu_id"
+        android:title="@string/packages" />
+    <item
+        android:id="@+id/your_private_bus_menu_id"
+        android:title="@string/private_bus" />
+    <item
+        android:id="@+id/your_settings_id"
+        android:title="@string/settings" />
+    <item
+        android:id="@+id/help_id"
+        android:title="@string/help" />
+    <item
+        android:id="@+id/privacy_center_id"
+        android:title="@string/privacy_center" />
 </menu>
