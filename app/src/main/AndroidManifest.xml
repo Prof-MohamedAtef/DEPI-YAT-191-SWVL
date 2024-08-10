@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,24 +14,28 @@
         android:supportsRtl="true"
         android:theme="@style/MaterialCoBridgeTheme"
         tools:targetApi="31">
-        <activity android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
         <activity
-            android:name=".feature.activity.search.SearchViewActivity"
-            android:exported="false" />
-        <activity
-            android:theme="@style/AppActionBarTheme"
-            android:name=".feature.activity.overflow.OverFlowMenuActivity"
-            android:exported="false" />
-        <activity
-            android:name=".feature.activity.swvl.SwvlHomeActivity"
-            android:exported="true">
+            android:name=".feature.intents.ExplicitIntentsActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".feature.activity.search.SearchViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.activity.overflow.OverFlowMenuActivity"
+            android:exported="false"
+            android:theme="@style/AppActionBarTheme" />
+        <activity
+            android:name=".feature.activity.swvl.SwvlHomeActivity"
+            android:exported="true">
+
         </activity>
         <activity
             android:name=".feature.activity.SecondScreenActivity"
