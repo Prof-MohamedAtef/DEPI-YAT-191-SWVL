@@ -12,6 +12,8 @@ constraintlayout = "2.1.4"
 deHdodenhofCircleImage = "3.1.0"
 drawer = "1.1.1"
 picassoVersion = "2.71828"
+navigationFragmentKtx = "2.7.7"
+navigationUiKtx = "2.7.7"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -25,6 +27,8 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 de-hdodenhof-circle-image-view = { group = "de.hdodenhof", name = "circleimageview", version.ref = "deHdodenhofCircleImage" }
 androidx-drawer-layout = { group = "androidx.drawerlayout", name = "drawerlayout", version.ref = "drawer"}
 picasso = {group = "com.squareup.picasso", name ="picasso", version.ref = "picassoVersion"}
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
 #implementation 'com.squareup.picasso:picasso:2.71828
 
 [plugins]

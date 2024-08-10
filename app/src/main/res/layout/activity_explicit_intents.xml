@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/gray_border"
     tools:context=".feature.intents.ExplicitIntentsActivity">
     <ImageView
         android:id="@+id/mapLauncherImage"
@@ -15,4 +16,53 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/ic_map_launcher"/>
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mapLauncherImage"
+        android:hint="@string/enter_phone_number"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btnCall"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintStart_toStartOf="@id/mapLauncherImage"
+            app:layout_constraintEnd_toEndOf="@id/mapLauncherImage"
+            app:layout_constraintTop_toBottomOf="@+id/phoneEditText"
+            android:background="@drawable/ic_phone_background">
+            <ImageView
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/ic_call"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btnMessaging"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="@id/mapLauncherImage"
+        app:layout_constraintEnd_toEndOf="@id/mapLauncherImage"
+        app:layout_constraintBottom_toTopOf="@+id/mapLauncherImage"
+        android:background="@drawable/ic_messaging_background">
+        <ImageView
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_sms"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

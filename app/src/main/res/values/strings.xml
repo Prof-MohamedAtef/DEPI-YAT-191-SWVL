@@ -29,5 +29,6 @@
     <string name="help">Help</string>
     <string name="privacy_center">Privacy Center</string>
     <string name="travel_from">Travel from</string>
+    <string name="enter_phone_number">Enter your phone</string>
 
 </resources>

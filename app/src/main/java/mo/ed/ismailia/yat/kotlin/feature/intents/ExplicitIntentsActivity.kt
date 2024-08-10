@@ -3,15 +3,20 @@ package mo.ed.ismailia.yat.kotlin.feature.intents
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.widget.EditText
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import mo.ed.ismailia.yat.kotlin.R
 
 class ExplicitIntentsActivity : AppCompatActivity() {
     lateinit var mapLauncher: ImageView
+    lateinit var btnCall: ConstraintLayout
+    lateinit var phoneEditText: EditText
+    lateinit var btnMessaging: ConstraintLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,6 +29,10 @@ class ExplicitIntentsActivity : AppCompatActivity() {
          */
 
         mapLauncher = findViewById(R.id.mapLauncherImage)
+        btnCall = findViewById(R.id.btnCall)
+        phoneEditText = findViewById(R.id.phoneEditText)
+        btnMessaging = findViewById(R.id.btnMessaging)
+
         mapLauncher.setOnClickListener { view ->
 //,
             val lat = 30.620965701999165
@@ -33,6 +42,19 @@ class ExplicitIntentsActivity : AppCompatActivity() {
             mapIntent.setPackage("com.google.android.apps.maps")
             startActivity(mapIntent)
 
+        }
+
+        btnCall.setOnClickListener { view ->
+            var phone = phoneEditText.text
+            val uri = Uri.fromParts("tel", phone.toString(), null)
+            val phoneIntent = Intent(Intent.ACTION_DIAL, uri)
+            startActivity(phoneIntent)
+        }
+        btnMessaging.setOnClickListener { view->
+            var phone = phoneEditText.text
+            val uri = Uri.fromParts("sms", phone.toString(), null)
+            val smsIntent = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(smsIntent)
         }
     }
 }

@@ -45,6 +45,8 @@ dependencies {
     implementation(libs.de.hdodenhof.circle.image.view)
     implementation(libs.androidx.drawer.layout)
     implementation(libs.picasso)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
