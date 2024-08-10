@@ -30,5 +30,10 @@
     <string name="privacy_center">Privacy Center</string>
     <string name="travel_from">Travel from</string>
     <string name="enter_phone_number">Enter your phone</string>
+    <string name="go_places">Go Places</string>
+    <string name="enter_your_mobile_num">|    Enter your mobile number</string>
+    <string name="or_connect">Or connect with social</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
 
 </resources>

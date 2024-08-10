@@ -5,8 +5,10 @@
     <color name="yellow">#FFF9C801</color>
     <color name="blue">#FF003B77</color>
     <color name="red">#F02849</color>
+    <color name="swvl_degree">#E81235</color>
     <color name="gray">#EAEAEA</color>
     <color name="gray_border">#F2F2F2</color>
     <color name="black_gray">#BABABA</color>
+    <color name="black_gray2">#757575</color>
     <color name="green">#0B770F</color>
 </resources>

@@ -16,4 +16,7 @@ class EnterPhoneFragment : Fragment() {
         val view =  inflater.inflate(R.layout.enter_phone_layout, container, false)
         return view
     }
+
+
+
 }
