@@ -12,6 +12,9 @@
         <action
             android:id="@+id/navigateFrom_signInScreen_to_EnterPhoneScreen"
             app:destination="@id/enterPhoneScreen" />
+        <action
+            android:id="@+id/navigateFrom_signInScreen_to_SignUpScreen"
+            app:destination="@+id/signUpFragment"/>
     </fragment>
     <fragment
         android:id="@+id/enterPhoneScreen"
@@ -19,4 +22,12 @@
         android:label="EnterPHone"
         tools:layout="@layout/enter_phone_fagment" />
 
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="mo.ed.ismailia.yat.kotlin.compose.features.auth.view.SignUpFragment"
+        android:label="SignUpFragment">
+        <action
+            android:id="@+id/navigate_From_SignUp_screen_to_sign_in_screen"
+            app:destination="@+id/signInScreen"/>
+    </fragment>
 </navigation>
