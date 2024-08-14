@@ -13,7 +13,7 @@ class EnterPhoneFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view =  inflater.inflate(R.layout.enter_phone_layout, container, false)
+        val view =  inflater.inflate(R.layout.enter_phone_fagment, container, false)
         return view
     }
 

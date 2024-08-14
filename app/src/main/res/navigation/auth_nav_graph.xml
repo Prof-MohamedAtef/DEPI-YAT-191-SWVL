@@ -9,11 +9,14 @@
         android:name="mo.ed.ismailia.yat.kotlin.feature.appnav.fragment.SignInFragment"
         android:label="SignInScreen"
         tools:layout="@layout/signin_fragment">
-        <action android:id="@+id/navigateFrom_signInScreen_to_EnterPhoneScreen"
-            app:destination="@id/enterPhoneScreen"/>
+        <action
+            android:id="@+id/navigateFrom_signInScreen_to_EnterPhoneScreen"
+            app:destination="@id/enterPhoneScreen" />
     </fragment>
-    <fragment android:id="@+id/enterPhoneScreen"
+    <fragment
+        android:id="@+id/enterPhoneScreen"
         android:name="mo.ed.ismailia.yat.kotlin.feature.appnav.fragment.EnterPhoneFragment"
         android:label="EnterPHone"
-        tools:layout="@layout/enter_phone_layout"/>
+        tools:layout="@layout/enter_phone_fagment" />
+
 </navigation>
