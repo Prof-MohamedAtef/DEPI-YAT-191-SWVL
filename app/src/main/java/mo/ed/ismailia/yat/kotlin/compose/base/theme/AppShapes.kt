@@ -1,4 +1,4 @@
-package mo.ed.nozha.apps.compose.base.theme
+package mo.ed.ismailia.yat.kotlin.compose.base.theme
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background

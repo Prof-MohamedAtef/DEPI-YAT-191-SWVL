@@ -1,4 +1,4 @@
-package mo.ed.nozha.apps.compose.base.theme
+package mo.ed.ismailia.yat.kotlin.compose.base.theme
 
 import android.content.res.Configuration
 import androidx.compose.foundation.background
@@ -33,12 +33,12 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import mo.ed.nozha.apps.R
-import mo.ed.nozha.apps.compose.base.AppText
+import mo.ed.ismailia.yat.kotlin.R
+import mo.ed.ismailia.yat.kotlin.compose.base.AppText
+import mo.ed.ismailia.yat.kotlin.compose.base.FontStyle
+import mo.ed.ismailia.yat.kotlin.compose.base.getTextStyle
 import mo.ed.nozha.apps.compose.base.AppTextField
-import mo.ed.nozha.apps.compose.base.FontStyle
 import mo.ed.nozha.apps.compose.base.TextFieldStyle
-import mo.ed.nozha.apps.compose.base.getTextStyle
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

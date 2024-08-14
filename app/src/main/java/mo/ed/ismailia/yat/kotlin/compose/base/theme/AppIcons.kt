@@ -1,11 +1,11 @@
-package mo.ed.nozha.apps.compose.base.theme
+package mo.ed.ismailia.yat.kotlin.compose.base.theme
 
 import androidx.annotation.DrawableRes
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.AccountCircle
 import androidx.compose.material.icons.rounded.Add
 import androidx.compose.ui.graphics.vector.ImageVector
-import mo.ed.nozha.apps.R
+import mo.ed.ismailia.yat.kotlin.R
 
 object AppIcons {
     val AccountCircle = Icons.Outlined.AccountCircle

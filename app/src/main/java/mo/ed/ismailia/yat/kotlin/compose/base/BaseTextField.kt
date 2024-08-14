@@ -32,8 +32,11 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import mo.ed.nozha.apps.R
-import mo.ed.nozha.apps.compose.base.theme.stcForwardFamily
+import mo.ed.ismailia.yat.kotlin.R
+import mo.ed.ismailia.yat.kotlin.R.*
+import mo.ed.ismailia.yat.kotlin.compose.base.AppText
+import mo.ed.ismailia.yat.kotlin.compose.base.FontStyle
+import mo.ed.ismailia.yat.kotlin.compose.base.theme.stcForwardFamily
 
 enum class TextFieldStyle{
     TextTextField,
@@ -59,12 +62,12 @@ fun AppTextField(
     isError: Boolean = false,
     errorMsg: String = "",
     progress: Float = 0f,
-    progressBarColor: Color = colorResource(id = R.color.white),
-    trackColor: Color = colorResource(id = R.color.white),
+    progressBarColor: Color = colorResource(id = color.white),
+    trackColor: Color = colorResource(id = color.white),
     progressHint: String = "",
     keyboardType: KeyboardType = KeyboardType.Text,
-    textFieldBackgroundColor: Int = R.color.base_3,
-    cursorColor:Int=R.color.useful_nums_text_color,
+    textFieldBackgroundColor: Int = color.base_3,
+    cursorColor:Int= color.useful_nums_text_color,
     label: @Composable (() -> Unit)? = null,
     placeholder: @Composable (() -> Unit)? = null,
     isArabic: Boolean = false,
@@ -96,11 +99,11 @@ fun AppTextFieldWithTextFieldValue(
     isError: Boolean = false,
     errorMsg: String = "",
     progress: Float = 0f,
-    progressBarColor: Color = colorResource(id = R.color.white),
-    trackColor: Color = colorResource(id = R.color.white),
+    progressBarColor: Color = colorResource(id = color.white),
+    trackColor: Color = colorResource(id = color.white),
     progressHint: String = "",
     keyboardType: KeyboardType = KeyboardType.Text,
-    textFieldBackgroundColor: Int = R.color.base_3,
+    textFieldBackgroundColor: Int = color.base_3,
     label: @Composable (() -> Unit)? = null,
     onValueChange: (TextFieldValue) -> Unit)
 {
@@ -119,10 +122,10 @@ fun TextTextField(
     textStyle: TextStyle,
     keyboardType: KeyboardType = KeyboardType.Text,
     isSingleLine: Boolean = true,
-    textFieldBackgroundColor: Int = R.color.base_3,
+    textFieldBackgroundColor: Int = color.base_3,
     label: @Composable (() -> Unit)? = null,
     placeholder: @Composable (() -> Unit)? = null,
-    cursorColor: Int=R.color.useful_nums_text_color,
+    cursorColor: Int= color.useful_nums_text_color,
     onValueChange: (String) -> Unit
 ){
     Column{
@@ -133,9 +136,9 @@ fun TextTextField(
             colors = TextFieldDefaults.textFieldColors(
                 focusedTextColor = colorResource(id = textFieldBackgroundColor),
                 unfocusedTextColor = colorResource(id = textFieldBackgroundColor),
-                disabledTextColor = colorResource(id = R.color.white),
-                focusedIndicatorColor =  colorResource(id = R.color.transparent),
-                unfocusedIndicatorColor = colorResource(id = R.color.base_3),
+                disabledTextColor = colorResource(id = color.white),
+                focusedIndicatorColor =  colorResource(id = color.transparent),
+                unfocusedIndicatorColor = colorResource(id = color.base_3),
                 cursorColor = colorResource(id = cursorColor)
             ),
             singleLine = isSingleLine,
@@ -163,12 +166,12 @@ fun NumberTextFieldWithError(
     label: @Composable (() -> Unit)? = null,
     placeholder: @Composable (() -> Unit)? = null,
     onValueChange: (String) -> Unit,
-    textFieldBackgroundColor: Int = R.color.base_3,
-    cursorColor: Int=R.color.useful_nums_text_color,
+    textFieldBackgroundColor: Int = color.base_3,
+    cursorColor: Int= color.useful_nums_text_color,
 ){
 
-    var errorColor = colorResource(id = R.color.transparent)
-    if (isError) errorColor = colorResource(id = R.color.danger_500)
+    var errorColor = colorResource(id = color.transparent)
+    if (isError) errorColor = colorResource(id = color.danger_500)
 
     Column{
         TextField(
@@ -182,9 +185,9 @@ fun NumberTextFieldWithError(
             colors = TextFieldDefaults.textFieldColors(
                 focusedTextColor = colorResource(id = textFieldBackgroundColor),
                 unfocusedTextColor = colorResource(id = textFieldBackgroundColor),
-                disabledTextColor = colorResource(id = R.color.white),
-                focusedIndicatorColor =  colorResource(id = R.color.transparent),
-                unfocusedIndicatorColor = colorResource(id = R.color.base_3),
+                disabledTextColor = colorResource(id = color.white),
+                focusedIndicatorColor =  colorResource(id = color.transparent),
+                unfocusedIndicatorColor = colorResource(id = color.base_3),
                 cursorColor = colorResource(id = cursorColor)
             ),
             singleLine = isSingleLine,
@@ -215,18 +218,18 @@ fun TextTextFieldWithError(
     value: String,
     errorMsg: String,
     textStyle: TextStyle,
-    textFieldBackgroundColor: Int = R.color.base_3,
+    textFieldBackgroundColor: Int = color.base_3,
     keyboardType: KeyboardType = KeyboardType.Text,
     isError: Boolean = false,
     isSingleLine: Boolean = true,
     label: @Composable (() -> Unit)? = null,
     placeholder: @Composable (() -> Unit)? = null,
     onValueChange: (String) -> Unit,
-    cursorColor: Int=R.color.useful_nums_text_color,
+    cursorColor: Int= color.useful_nums_text_color,
 ){
 
-    var errorColor = colorResource(id = R.color.transparent)
-    if (isError) errorColor = colorResource(id = R.color.danger_500)
+    var errorColor = colorResource(id = color.transparent)
+    if (isError) errorColor = colorResource(id = color.danger_500)
 
     Column{
         TextField(
@@ -240,9 +243,9 @@ fun TextTextFieldWithError(
             colors = TextFieldDefaults.textFieldColors(
                 focusedTextColor = colorResource(id = textFieldBackgroundColor),
                 unfocusedTextColor = colorResource(id = textFieldBackgroundColor),
-                disabledTextColor = colorResource(id = R.color.white),
-                focusedIndicatorColor =  colorResource(id = R.color.transparent),
-                unfocusedIndicatorColor = colorResource(id = R.color.base_3),
+                disabledTextColor = colorResource(id = color.white),
+                focusedIndicatorColor =  colorResource(id = color.transparent),
+                unfocusedIndicatorColor = colorResource(id = color.base_3),
                 cursorColor = colorResource(id = cursorColor)
             ),
             singleLine = isSingleLine,
@@ -277,11 +280,11 @@ fun PasswordTextField(
     label: @Composable (() -> Unit)? = null,
     placeholder: @Composable (() -> Unit)? = null,
     onValueChange: (String) -> Unit,
-    cursorColor: Int=R.color.useful_nums_text_color,
-    textFieldBackgroundColor: Int = R.color.base_3,
+    cursorColor: Int= color.useful_nums_text_color,
+    textFieldBackgroundColor: Int = color.base_3,
 ){
     var passwordIcon = remember {
-        mutableStateOf(R.drawable.ic_trailing_hide)
+        mutableStateOf(drawable.ic_trailing_hide)
     }
 
     var visualTransformationType = remember {
@@ -305,26 +308,26 @@ fun PasswordTextField(
                             .clickable {
                                 if (isPasswordVisible.value) {
                                     isPasswordVisible.value = false
-                                    passwordIcon.value = R.drawable.ic_trailing_hide
+                                    passwordIcon.value = drawable.ic_trailing_hide
                                     visualTransformationType.value = PasswordVisualTransformation()
                                 } else {
                                     isPasswordVisible.value = true
-                                    passwordIcon.value = R.drawable.ic_trailing
+                                    passwordIcon.value = drawable.ic_trailing
                                     visualTransformationType.value = VisualTransformation.None
                                 }
                             },
                         painter = painterResource(id = passwordIcon.value),
                         contentDescription = null,
-                        tint = colorResource(id = R.color.white),
+                        tint = colorResource(id = color.white),
                     )
                 }
             },
             colors = TextFieldDefaults.textFieldColors(
                 focusedTextColor = colorResource(id = textFieldBackgroundColor),
                 unfocusedTextColor = colorResource(id = textFieldBackgroundColor),
-                disabledTextColor = colorResource(id = R.color.white),
-                focusedIndicatorColor =  colorResource(id = R.color.transparent),
-                unfocusedIndicatorColor = colorResource(id = R.color.base_3),
+                disabledTextColor = colorResource(id = color.white),
+                focusedIndicatorColor =  colorResource(id = color.transparent),
+                unfocusedIndicatorColor = colorResource(id = color.base_3),
                 cursorColor = colorResource(id = cursorColor)
             ),
             singleLine = isSingleLine,
@@ -357,11 +360,11 @@ fun PasswordTextFieldWithError(
     label: @Composable (() -> Unit)? = null,
     placeholder: @Composable (() -> Unit)? = null,
     onValueChange: (String) -> Unit,
-    cursorColor: Int=R.color.useful_nums_text_color,
-    textFieldBackgroundColor: Int = R.color.base_3,
+    cursorColor: Int= color.useful_nums_text_color,
+    textFieldBackgroundColor: Int = color.base_3,
 ){
     var passwordIcon = remember {
-        mutableStateOf(R.drawable.ic_trailing_hide)
+        mutableStateOf(drawable.ic_trailing_hide)
     }
 
     var visualTransformationType = remember {
@@ -372,8 +375,8 @@ fun PasswordTextFieldWithError(
         mutableStateOf(false)
     }
 
-    var errorColor = colorResource(id = R.color.transparent)
-    if (isError) errorColor = colorResource(id = R.color.danger_500)
+    var errorColor = colorResource(id = color.transparent)
+    if (isError) errorColor = colorResource(id = color.danger_500)
 
     Column{
         TextField(
@@ -392,26 +395,26 @@ fun PasswordTextFieldWithError(
                             .clickable {
                                 if (isPasswordVisible.value) {
                                     isPasswordVisible.value = false
-                                    passwordIcon.value = R.drawable.ic_trailing_hide
+                                    passwordIcon.value = drawable.ic_trailing_hide
                                     visualTransformationType.value = PasswordVisualTransformation()
                                 } else {
                                     isPasswordVisible.value = true
-                                    passwordIcon.value = R.drawable.ic_trailing
+                                    passwordIcon.value = drawable.ic_trailing
                                     visualTransformationType.value = VisualTransformation.None
                                 }
                             },
                         painter = painterResource(id = passwordIcon.value),
                         contentDescription = null,
-                        tint = colorResource(id = R.color.white),
+                        tint = colorResource(id = color.white),
                     )
                 }
             },
             colors = TextFieldDefaults.textFieldColors(
                 focusedTextColor = colorResource(id = textFieldBackgroundColor),
                 unfocusedTextColor = colorResource(id = textFieldBackgroundColor),
-                disabledTextColor = colorResource(id = R.color.white),
-                focusedIndicatorColor =  colorResource(id = R.color.transparent),
-                unfocusedIndicatorColor = colorResource(id = R.color.base_3),
+                disabledTextColor = colorResource(id = color.white),
+                focusedIndicatorColor =  colorResource(id = color.transparent),
+                unfocusedIndicatorColor = colorResource(id = color.base_3),
                 cursorColor = colorResource(id = cursorColor)
             ),
             singleLine = isSingleLine,
@@ -459,11 +462,11 @@ fun PasswordTextFieldWithProgressBarWithError(
     label: @Composable (() -> Unit)? = null,
     placeholder: @Composable (() -> Unit)? = null,
     onValueChange: (String) -> Unit,
-    cursorColor: Int=R.color.useful_nums_text_color,
-    textFieldBackgroundColor: Int = R.color.base_3,
+    cursorColor: Int= color.useful_nums_text_color,
+    textFieldBackgroundColor: Int = color.base_3,
 ){
     var passwordIcon = remember {
-        mutableStateOf(R.drawable.ic_trailing_hide)
+        mutableStateOf(drawable.ic_trailing_hide)
     }
 
     var visualTransformationType = remember {
@@ -479,8 +482,8 @@ fun PasswordTextFieldWithProgressBarWithError(
         animationSpec = ProgressIndicatorDefaults.ProgressAnimationSpec
     )
 
-    var borderColor = colorResource(id = R.color.transparent)
-    if (isError) borderColor = colorResource(id = R.color.danger_500) else borderColor
+    var borderColor = colorResource(id = color.transparent)
+    if (isError) borderColor = colorResource(id = color.danger_500) else borderColor
 
     Column{
         TextField(
@@ -499,26 +502,26 @@ fun PasswordTextFieldWithProgressBarWithError(
                             .clickable {
                                 if (isPasswordVisible.value) {
                                     isPasswordVisible.value = false
-                                    passwordIcon.value = R.drawable.ic_trailing_hide
+                                    passwordIcon.value = drawable.ic_trailing_hide
                                     visualTransformationType.value = PasswordVisualTransformation()
                                 } else {
                                     isPasswordVisible.value = true
-                                    passwordIcon.value = R.drawable.ic_trailing
+                                    passwordIcon.value = drawable.ic_trailing
                                     visualTransformationType.value = VisualTransformation.None
                                 }
                             },
                         painter = painterResource(id = passwordIcon.value),
                         contentDescription = null,
-                        tint = colorResource(id = R.color.white),
+                        tint = colorResource(id = color.white),
                     )
                 }
             },
             colors = TextFieldDefaults.textFieldColors(
                 focusedTextColor = colorResource(id = textFieldBackgroundColor),
                 unfocusedTextColor = colorResource(id = textFieldBackgroundColor),
-                disabledTextColor = colorResource(id = R.color.white),
-                focusedIndicatorColor =  colorResource(id = R.color.transparent),
-                unfocusedIndicatorColor = colorResource(id = R.color.base_3),
+                disabledTextColor = colorResource(id = color.white),
+                focusedIndicatorColor =  colorResource(id = color.transparent),
+                unfocusedIndicatorColor = colorResource(id = color.base_3),
                 cursorColor = colorResource(id = cursorColor)
             ),
             singleLine = isSingleLine,
@@ -553,7 +556,7 @@ fun PasswordTextFieldWithProgressBarWithError(
                 .padding(top = 6.dp, end = 16.dp),
             fontStyle = FontStyle.BaseTextRegularBody3,
             text = progressHint,
-            color = colorResource(id = R.color.white))
+            color = colorResource(id = color.white))
 
     }
 }
@@ -566,11 +569,11 @@ fun NumberTextField(
     textStyle: TextStyle,
     keyboardType: KeyboardType = KeyboardType.Number,
     isSingleLine: Boolean = true,
-    textFieldBackgroundColor: Int = R.color.base_3,
+    textFieldBackgroundColor: Int = color.base_3,
     label: @Composable (() -> Unit)? = null,
     placeholder: @Composable (() -> Unit)? = null,
     onValueChange: (String) -> Unit,
-    cursorColor: Int=R.color.useful_nums_text_color,
+    cursorColor: Int= color.useful_nums_text_color,
 ){
 
     Column{
@@ -581,9 +584,9 @@ fun NumberTextField(
             colors = TextFieldDefaults.textFieldColors(
                 focusedTextColor = colorResource(id = textFieldBackgroundColor),
                 unfocusedTextColor = colorResource(id = textFieldBackgroundColor),
-                disabledTextColor = colorResource(id = R.color.white),
-                focusedIndicatorColor =  colorResource(id = R.color.transparent),
-                unfocusedIndicatorColor = colorResource(id = R.color.base_3),
+                disabledTextColor = colorResource(id = color.white),
+                focusedIndicatorColor =  colorResource(id = color.transparent),
+                unfocusedIndicatorColor = colorResource(id = color.base_3),
                 cursorColor = colorResource(id = cursorColor)
             ),
             singleLine = isSingleLine,
@@ -606,10 +609,10 @@ fun NumberTextFieldWithTextFieldValue(
     textStyle: TextStyle,
     keyboardType: KeyboardType = KeyboardType.Number,
     isSingleLine: Boolean = true,
-    textFieldBackgroundColor: Int = R.color.base_3,
+    textFieldBackgroundColor: Int = color.base_3,
     label: @Composable (() -> Unit)? = null,
     onValueChange: (TextFieldValue) -> Unit,
-    cursorColor: Int=R.color.useful_nums_text_color,
+    cursorColor: Int= color.useful_nums_text_color,
 ){
 
     Column{
@@ -620,9 +623,9 @@ fun NumberTextFieldWithTextFieldValue(
             colors = TextFieldDefaults.textFieldColors(
                 focusedTextColor = colorResource(id = textFieldBackgroundColor),
                 unfocusedTextColor = colorResource(id = textFieldBackgroundColor),
-                disabledTextColor = colorResource(id = R.color.white),
-                focusedIndicatorColor =  colorResource(id = R.color.transparent),
-                unfocusedIndicatorColor = colorResource(id = R.color.base_3),
+                disabledTextColor = colorResource(id = color.white),
+                focusedIndicatorColor =  colorResource(id = color.transparent),
+                unfocusedIndicatorColor = colorResource(id = color.base_3),
                 cursorColor = colorResource(id = cursorColor)
             ),
             singleLine = isSingleLine,
@@ -647,11 +650,11 @@ fun LoginPasswordTextField(
     label: @Composable (() -> Unit)? = null,
     placeholder: @Composable (() -> Unit)? = null,
     onValueChange: (String) -> Unit,
-    cursorColor: Int=R.color.useful_nums_text_color,
-    textFieldBackgroundColor: Int = R.color.base_3,
+    cursorColor: Int= color.useful_nums_text_color,
+    textFieldBackgroundColor: Int = color.base_3,
 ){
     var passwordIcon = remember {
-        mutableStateOf(R.drawable.ic_trailing_hide)
+        mutableStateOf(drawable.ic_trailing_hide)
     }
 
     var visualTransformationType = remember {
@@ -675,26 +678,26 @@ fun LoginPasswordTextField(
                             .clickable {
                                 if (isPasswordVisible.value) {
                                     isPasswordVisible.value = false
-                                    passwordIcon.value = R.drawable.ic_trailing_hide
+                                    passwordIcon.value = drawable.ic_trailing_hide
                                     visualTransformationType.value = PasswordVisualTransformation()
                                 } else {
                                     isPasswordVisible.value = true
-                                    passwordIcon.value = R.drawable.ic_trailing
+                                    passwordIcon.value = drawable.ic_trailing
                                     visualTransformationType.value = VisualTransformation.None
                                 }
                             },
                         painter = painterResource(id = passwordIcon.value),
                         contentDescription = null,
-                        tint = colorResource(id = R.color.white),
+                        tint = colorResource(id = color.white),
                     )
                 }
             },
             colors = TextFieldDefaults.textFieldColors(
                 focusedTextColor = colorResource(id = textFieldBackgroundColor),
                 unfocusedTextColor = colorResource(id = textFieldBackgroundColor),
-                disabledTextColor = colorResource(id = R.color.white),
-                focusedIndicatorColor =  colorResource(id = R.color.transparent),
-                unfocusedIndicatorColor = colorResource(id = R.color.base_3),
+                disabledTextColor = colorResource(id = color.white),
+                focusedIndicatorColor =  colorResource(id = color.transparent),
+                unfocusedIndicatorColor = colorResource(id = color.base_3),
                 cursorColor = colorResource(id = cursorColor)
             ),
             singleLine = isSingleLine,
@@ -729,11 +732,11 @@ fun LoginPasswordTextFieldWithError(
     errorMsg: String,
     isError: Boolean = false,
     isArabic: Boolean = false,
-    cursorColor: Int=R.color.useful_nums_text_color,
-    textFieldBackgroundColor: Int = R.color.base_3,
+    cursorColor: Int= color.useful_nums_text_color,
+    textFieldBackgroundColor: Int = color.base_3,
 ){
     var passwordIcon = remember {
-        mutableStateOf(R.drawable.ic_trailing_hide)
+        mutableStateOf(drawable.ic_trailing_hide)
     }
 
     var visualTransformationType = remember {
@@ -744,8 +747,8 @@ fun LoginPasswordTextFieldWithError(
         mutableStateOf(false)
     }
 
-    var errorColor = colorResource(id = R.color.transparent)
-    if (isError) errorColor = colorResource(id = R.color.danger_500)
+    var errorColor = colorResource(id = color.transparent)
+    if (isError) errorColor = colorResource(id = color.danger_500)
 
     Column{
         TextField(
@@ -764,26 +767,26 @@ fun LoginPasswordTextFieldWithError(
                             .clickable {
                                 if (isPasswordVisible.value) {
                                     isPasswordVisible.value = false
-                                    passwordIcon.value = R.drawable.ic_trailing_hide
+                                    passwordIcon.value = drawable.ic_trailing_hide
                                     visualTransformationType.value = PasswordVisualTransformation()
                                 } else {
                                     isPasswordVisible.value = true
-                                    passwordIcon.value = R.drawable.ic_trailing
+                                    passwordIcon.value = drawable.ic_trailing
                                     visualTransformationType.value = VisualTransformation.None
                                 }
                             },
                         painter = painterResource(id = passwordIcon.value),
                         contentDescription = null,
-                        tint = colorResource(id = R.color.white),
+                        tint = colorResource(id = color.white),
                     )
                 }
             },
             colors = TextFieldDefaults.textFieldColors(
                 focusedTextColor = colorResource(id = textFieldBackgroundColor),
                 unfocusedTextColor = colorResource(id = textFieldBackgroundColor),
-                disabledTextColor = colorResource(id = R.color.white),
-                focusedIndicatorColor =  colorResource(id = R.color.transparent),
-                unfocusedIndicatorColor = colorResource(id = R.color.base_3),
+                disabledTextColor = colorResource(id = color.white),
+                focusedIndicatorColor =  colorResource(id = color.transparent),
+                unfocusedIndicatorColor = colorResource(id = color.base_3),
                 cursorColor = colorResource(id = cursorColor)
             ),
             singleLine = isSingleLine,

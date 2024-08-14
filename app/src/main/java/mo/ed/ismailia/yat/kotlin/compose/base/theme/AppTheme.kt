@@ -1,4 +1,4 @@
-package mo.ed.nozha.apps.compose.base.theme
+package mo.ed.ismailia.yat.kotlin.compose.base.theme
 
 import android.app.Activity
 import android.os.Build

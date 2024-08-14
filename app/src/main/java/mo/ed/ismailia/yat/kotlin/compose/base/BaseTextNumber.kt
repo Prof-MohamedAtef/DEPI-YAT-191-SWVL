@@ -1,4 +1,4 @@
-package mo.ed.nozha.apps.compose.base
+package mo.ed.ismailia.yat.kotlin.compose.base
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -12,7 +12,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.sp
-import mo.ed.nozha.apps.R
+import mo.ed.ismailia.yat.kotlin.R
 
 val stcForwardBold = FontFamily(Font(R.font.stcforward_bold, FontWeight.Bold))
 

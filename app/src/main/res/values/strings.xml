@@ -36,5 +36,8 @@
     <string name="facebook">Facebook</string>
     <string name="google">Google</string>
     <string name="bio">By continuing, you agree to SWVLs Terms and\n Privacy.</string>
+    <string name="sign_up">Sign up</string>
+    <string name="enter_full_name">Enter your name</string>
+    <string name="enter_email">Enter your email</string>
 
 </resources>

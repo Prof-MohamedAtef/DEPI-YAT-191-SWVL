@@ -1,4 +1,4 @@
-package mo.ed.nozha.apps.compose.base
+package mo.ed.ismailia.yat.kotlin.compose.base
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -11,7 +11,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.sp
-import mo.ed.nozha.apps.compose.base.theme.stcForwardFamily
+import mo.ed.ismailia.yat.kotlin.compose.base.theme.stcForwardFamily
 
 enum class FontStyle {
     BaseTextLightBody1,
@@ -64,7 +64,14 @@ fun AppText(fontStyle: FontStyle, text: String, color: Color = Color.Black, modi
         FontStyle.BaseTextBoldBody3 -> BaseTextBoldBody3(text, color = color, modifier = modifier, textAlign = textAlign, maxLines = maxLines, softWrap = softWrap)
         FontStyle.BaseTextLightBody4 -> BaseTextLightBody4(text, color = color, modifier = modifier, textAlign = textAlign, maxLines = maxLines, softWrap = softWrap)
         FontStyle.BaseTextLightHeading1 -> BaseTextLightHeading1(text, color = color, modifier = modifier, textAlign = textAlign, maxLines = maxLines, softWrap = softWrap)
-        FontStyle.BaseTextLightHeading2 -> BaseTextLightHeading2(text, color = color, modifier = modifier, textAlign = textAlign, maxLines = maxLines, softWrap = softWrap)
+        FontStyle.BaseTextLightHeading2 -> BaseTextLightHeading2(
+            text,
+            color = color,
+            modifier = modifier,
+            textAlign = textAlign,
+            maxLines = maxLines,
+            softWrap = softWrap
+        )
         FontStyle.BaseTextLightHeading3 -> BaseTextLightHeading3(text, color = color, modifier = modifier, textAlign = textAlign, maxLines = maxLines, softWrap = softWrap)
         FontStyle.BaseTextRegularHeading1 -> BaseTextRegularHeading1(text, color = color, modifier = modifier, textAlign = textAlign, maxLines = maxLines, softWrap = softWrap)
         FontStyle.BaseTextRegularHeading2 -> BaseTextRegularHeading2(text, color = color, modifier = modifier, textAlign = textAlign, maxLines = maxLines, softWrap = softWrap)
@@ -72,7 +79,14 @@ fun AppText(fontStyle: FontStyle, text: String, color: Color = Color.Black, modi
         FontStyle.BaseTextMediumHeading1 -> BaseTextMediumHeading1(text, color = color, modifier = modifier, textAlign = textAlign, maxLines = maxLines, softWrap = softWrap)
         FontStyle.BaseTextMediumHeading2 -> BaseTextMediumHeading2(text, color = color, modifier = modifier, textAlign = textAlign, maxLines = maxLines, softWrap = softWrap)
         FontStyle.BaseTextMediumHeading3 -> BaseTextMediumHeading3(text, color = color, modifier = modifier, textAlign = textAlign, maxLines = maxLines, softWrap = softWrap)
-        FontStyle.BaseTextBoldHeading1 -> BaseTextBoldHeading1(text, color = color, modifier = modifier, textAlign = textAlign, maxLines = maxLines, softWrap = softWrap)
+        FontStyle.BaseTextBoldHeading1 -> BaseTextBoldHeading1(
+            text,
+            color = color,
+            modifier = modifier,
+            textAlign = textAlign,
+            maxLines = maxLines,
+            softWrap = softWrap
+        )
         FontStyle.BaseTextBoldHeading2 -> BaseTextBoldHeading2(text, color = color, modifier = modifier, textAlign = textAlign, maxLines = maxLines, softWrap = softWrap)
         FontStyle.BaseTextBoldHeading3 -> BaseTextBoldHeading3(text, color = color, modifier = modifier, textAlign = textAlign, maxLines = maxLines, softWrap = softWrap)
         FontStyle.BaseTextNumber1 -> BaseTextNumber1(text, color = color, modifier = modifier, textAlign = textAlign, maxLines = maxLines, softWrap = softWrap)

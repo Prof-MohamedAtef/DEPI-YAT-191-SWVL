@@ -1,4 +1,4 @@
-package mo.ed.nozha.apps.compose.base.theme
+package mo.ed.ismailia.yat.kotlin.compose.base.theme
 
 import androidx.compose.ui.graphics.Color
 
@@ -9,6 +9,8 @@ val Disabled = Color(0xFF5b2b7c)
 val Default_Text = Color(0xFF7537a0)
 val bg_bottom_sheet_color= Color(0x999647cd)
 val icon_shape_color = Color(0xFFA54EE1)
+
+val swvlColorDegree = Color(0xFFE81235)
 
 val usable_shape_amount_due_color = Color(0xFFB771E7)
 

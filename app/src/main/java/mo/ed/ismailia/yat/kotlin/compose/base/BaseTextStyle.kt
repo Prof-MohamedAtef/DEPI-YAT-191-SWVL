@@ -1,10 +1,10 @@
-package mo.ed.nozha.apps.compose.base
+package mo.ed.ismailia.yat.kotlin.compose.base
 
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
-import mo.ed.nozha.apps.compose.base.theme.stcForwardFamily
+import mo.ed.ismailia.yat.kotlin.compose.base.theme.stcForwardFamily
 
 fun getTextStyle(fontStyle: FontStyle, textAlign: TextAlign): TextStyle {
 

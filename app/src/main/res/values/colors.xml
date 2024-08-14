@@ -3,12 +3,372 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="yellow">#FFF9C801</color>
-    <color name="blue">#FF003B77</color>
     <color name="red">#F02849</color>
     <color name="swvl_degree">#E81235</color>
-    <color name="gray">#EAEAEA</color>
     <color name="gray_border">#F2F2F2</color>
     <color name="black_gray">#BABABA</color>
     <color name="black_gray2">#757575</color>
-    <color name="green">#0B770F</color>
+
+    <color name="blue">#0560E7</color>
+    <color name="gray">#EEEEEE</color>
+    <color name="gray2">#999999</color>
+    <color name="blue2">#FF1754AF</color>
+    <color name="brown">#FF6C5716</color>
+    <color name="green">#1FA323</color>
+
+    <!--    Toast-->
+    <color name="toast_success_dark">#00B280</color>
+    <color name="toast_success_light">#E6F9F4</color>
+    <color name="toast_failed_dark">#D3314F</color>
+    <color name="toast_failed_light">#FAE5E9</color>
+
+    <!--    Shimmer-->
+    <color name="shimmer">#EBEBE6</color>
+
+    <!--divider-->
+    <color name="divider">#e7e8e9</color>
+
+    <!--stc logo-->
+    <color name="silver_stc_logo">#8B8A8A</color>
+
+    <!--transparent-->
+    <color name="transparent">#00000000</color>
+
+    <!--line between sections-->
+    <color name="line_silver">#D6D7D9</color>
+    <color name="line_silver_secondary">#D0D8D8</color>
+
+    <!--    Primary-->
+    <color name="hint_color">#ABAAAA</color>
+    <color name="white_dot">#d9d9d9</color>
+    <color name="white_transparent_63">#63FFFFFF</color>
+    <color name="white_transparent_60">#60FFFFFF</color>
+    <color name="white_transparent_70">#70FFFFFF</color>
+    <color name="white_transparent_80">#80FFFFFF</color>
+    <color name="light_neutral">#BABCBF</color>
+
+    <color name="neutral_dark_70">#14191F</color>
+    <color name="black_14">#141414</color>
+    <color name="black_20">#191f26</color>
+    <color name="black_40">#434141</color>
+    <color name="black_201">#201F1F</color>
+    <color name="black_50">#141414</color>
+    <color name="black_10">#282829</color>
+    <color name="black_5">#494949</color>
+    <color name="black_transparent_a6">#a6000000</color>
+    <color name="black_neutrals">#4b5258</color>
+    <color name="edit_text_background">#353535</color>
+    <color name="ripple_color">#E8EBEC</color>
+    <color name="purple">#4F008C</color>
+    <color name="accent">#370061</color>
+    <color name="edit_text_color">#353535</color>
+    <!--    widget toolbar-->
+    <color name="purple_dark">#390065</color>
+    <color name="moon">#D9A1FF</color>
+
+    <color name="coral">#FF375E</color>
+    <color name="coral_disabled">#FFD7DF</color>
+    <color name="coral_transparent_50">#50ff375e</color>
+
+    <!--    Feedback Colours-->
+    <color name="success">#00A96B</color>
+    <color name="pending">#FDC538</color>
+    <color name="error">#D90036</color>
+    <color name="warning">#E96235</color>
+    <color name="warning_background">@color/sunset_light_transparent_20</color>
+    <color name="error_bar_icon_background">#D3314F</color>
+    <color name="error_bar_background">#FAE5E9</color>
+
+    <!--    Sun Light-->
+    <color name="sun_light">#FFDD40</color>
+    <color name="light_sun_light">#FFDF45</color>
+    <color name="sun_light_900">#6A5D1B</color>
+    <color name="sun_light_100">#FFF4C2</color>
+    <color name="sun_light_80">#FFE466</color>
+    <color name="sun_light_60">#FFEB8D</color>
+    <color name="sun_light_40">#FFF1B3</color>
+    <color name="sun_light_20">#FFF8D8</color>
+    <color name="sun_light_10">#FFFBEB</color>
+    <color name="sun_light_5">#FFFCEB</color>
+
+    <!--    Sunset Light-->
+    <color name="sunset_light">#FF6A39</color>
+    <color name="sunset_light_80">#FF8861</color>
+    <color name="sunset_light_60">#FFA688</color>
+    <color name="sunset_light_40">#FFC3B0</color>
+    <color name="sunset_light_20">#FFE1D7</color>
+    <color name="sunset_light_10">#FFF0EB</color>
+    <color name="sunset_light_transparent_20">#337E2000</color>
+
+    <!--    Oasis Light-->
+    <color name="oasis_light">#00C48C</color>
+    <color name="oasis_light_80">#33D0A3</color>
+    <color name="oasis_light_60">#66DCBA</color>
+    <color name="oasis_light_40">#99E7D1</color>
+    <color name="oasis_light_20">#CCF3E8</color>
+    <color name="oasis_light_10">#E5F9F3</color>
+    <color name="oasis_light_50">#E9FAFB</color>
+    <color name="oasis_light_200">#96E9ED</color>
+
+    <!--Notification/Info -->
+    <color name="notification_info">#13949A</color>
+    <color name="notification_sucess">#33D1A4</color>
+    <color name="notification_warning_800">#8E3B1F</color>
+    <color name="notification_warning_100">#FFD1C2</color>
+    <color name="notification_warning">#FFF7F5</color>
+    <color name="light_theme_notification">#F3FCFA</color>
+    <color name="active_status">#01C48C</color>
+    <color name="dark_green">#00C48C</color>
+
+    <!--Sea Light-->
+    <color name="sea_light">#1CCED8</color>
+    <color name="sea_light_80">#49D8E0</color>
+    <color name="sea_light_60">#77E2E8</color>
+    <color name="sea_light_40">#A4EBEF</color>
+    <color name="sea_light_20">#D2F5F7</color>
+    <color name="sea_light_10">#E8FAFB</color>
+
+    <!--moon light-->
+    <color name="moon_light">#A54EE1</color>
+    <color name="moon_light_dark">#7333A3</color>
+    <color name="secondary_moon_light">#B76FE7</color>
+    <color name="moon_light_secondary">#A54EE1</color>
+    <color name="moon_light_a6">#A64EE2</color>
+    <color name="moon_light_transparent_60">#60A54EE1</color>
+    <color name="moon_light_transparent_88">#88A54EE1</color>
+    <!--    <color name="moon_light_80">#B771E7</color>-->
+    <color name="moon_light_60">#C995ED</color>
+    <!--    <color name="moon_light_40">#DBB8F3</color>-->
+    <color name="moon_light_20">#EDDCF9</color>
+    <!--    <color name="moon_light_10">#F6EDFC</color>-->
+    <!--moon light button primary-->
+    <color name="moon_light_hover">#9547cd</color>
+    <color name="moon_light_tapped">#7437a0</color>
+    <color name="moon_light_focus">#d5acf1</color>
+
+    <!--moon light button secondary-->
+    <color name="moon_light_secondary_hover">#f6eefc</color>
+    <color name="moon_light_secondary_tapped">#e2c6f6</color>
+    <color name="moon_light_secondary_Focus">#f6eefc</color>
+    <color name="silver_secondary_disable">#dbdfe1</color>
+
+    <!--moon light edit text empty tapped-->
+    <color name="moon_light_primary_empty_tapped">#f6f2f9</color>
+
+    <!--neutral dark-->
+    <color name="neutral_dark_770">#F6EDFC</color>
+
+    <!--silver-->
+    <color name="silver">#8E9AA0</color>
+    <color name="silver_transparent_15">#158E9AA0</color>
+    <color name="silver_transparent_40">#408E9AA0</color>
+    <color name="silver_transparent_70">#708E9AA0</color>
+    <color name="silver_disable">#999c9f</color>
+    <color name="silver_80">#A5AEB3</color>
+    <color name="silver_70">#BCBEC0</color>
+    <color name="silver_60">#BBC2C6</color>
+    <color name="silver_50">#8E9296</color>
+    <color name="silver_40">#D2D7D9</color>
+    <color name="silver_20">#E8EBEC</color>
+    <color name="silver_10">#F3F4F5</color>
+    <color name="silver_03">#F2F2F2</color>
+    <color name="silver_surface">#f3f3f1</color>
+    <color name="silver_surface_50">#4E4E4E</color>
+    <color name="surface_600">#DCDCDA</color>
+    <color name="silver_neutral">#F4F5F6</color>
+    <color name="neutral_light">#CBD0D2</color>
+    <color name="neutral_dark_55">#E7E8E9</color>
+
+    <color name="end_user_silver">#E7E8E9</color>
+    <color name="end_user_silver_dark">#656D72</color>
+
+    <color name="end_user">#F6F2F9</color>
+    <color name="end_user_light">#C7AFDA</color>
+    <color name="end_user_dark">#5C2B7D</color>
+
+    <!-- notification success -->
+    <color name="notification_success_10">#B9F0F3</color>
+    <color name="notification_success_30">#0F7176</color>
+    <color name="notification_success_50">#E6F9F4</color>
+    <color name="notification_success_100">#B0EDDB</color>
+    <color name="notification_success_800">#006B4D</color>
+
+    <!--onyx-->
+    <color name="onyx_black">#1E1E1E</color>
+    <color name="onyx_black_2B">#2B2B2B</color>
+    <color name="onyx_41">#414141</color>
+    <color name="onyx">#1D252D</color>
+    <color name="onyx_neutrals">#686E73</color>
+    <color name="onyx_neutrals_light_100">#DBDFE1</color>
+    <color name="onyx_neutrals_light_200">#818C92</color>
+    <color name="onyx_transparent_00">#001D252D</color>
+    <color name="onyx_transparent_08">#081D252D</color>
+    <color name="onyx_transparent_33">#331d252d</color>
+    <color name="onyx_80">#4A5157</color>
+    <color name="onyx_60">#777C81</color>
+    <color name="onyx_40">#A5A8AB</color>
+    <color name="onyx_30">#343b43</color>
+    <color name="onyx_20">#D2D3D5</color>
+    <color name="onyx_10">#E8E9EA</color>
+    <color name="onyx_light">#3E3E41</color>
+
+
+    <color name="surface_60">#DCDCDA</color>
+    <color name="surface_70">#008A63</color>
+    <color name="surface_700">#ACACAA</color>
+    <color name="surface_800">#858585</color>
+
+    <!--danger red-->
+    <color name="danger_red">#C80025</color>
+
+    <!--ebony clay-->
+    <color name="ebony_clay">#0C1013</color>
+    <color name="ebony_clay_40">#404040</color>
+
+    <color name="ticket_bg">#111010</color>
+    <color name="ticket_item_bg">#373737</color>
+    <color name="ticket_in_progress">#FF6A38</color>
+    <color name="suspended">#FF6A38</color>
+    <color name="light_orange">#FF8861</color>
+
+    <color name="dialog_background">#343232</color>
+
+    <color name="divider_color_grey">#808080</color>
+
+    <color name="new_theme_primary_color">#373737</color>
+
+    <!--    romaing colors-->
+    <color name="useful_nums_text_color">#C489EB</color>
+    <color name="useful_nums_value_text_color">#C883F6</color>
+    <color name="figma_background">#1E1E1E</color>
+    <color name="roaming_backgroud_color">#1F1F1F</color>
+    <color name="roaming_detail_backgroud_color">#1C1B1B</color>
+
+    <color name="roaming_cards_color">#333333</color>
+    <color name="roaming_countries_listitem_bg_color">#333333</color>
+    <color name="roaming_details_listitem_bg_color">#303030</color>
+    <color name="useful_numbers_bg_color">#313131</color>
+    <color name="roaming_item_details_bg_color">#302F2F</color>
+
+    <color name="roaming_useful_nums_listitem_bg_color">#313131</color>
+    <!--  credit colors  -->
+    <color name="iron_font_color">#9CAFC2</color>
+    <color name="silver_font_color">#FF898888</color>
+    <color name="extra_credit_search_font_color">#B9B9B9</color>
+    <color name="extra_credit_amount_text_color">#E7E8E9</color>
+
+    <color name="view_all_text_color_light_moonlight">#C883F6</color>
+    <color name="account_type_bg_card">#2A2A2A</color>
+    <color name="selected_Account_bg">#66A54EE1</color>
+    <color name="unselected_Account_bg">#2C2C2C</color>
+
+
+    <color name="nav_bar">#1F2022</color>
+    <color name="light_grey_text_color">#C1C1C1</color>
+    <color name="divider_line_rv_dark_grey">#63FFFFFF</color>
+
+    <!--we can use this colors for the new design keep in mind we will use this in both themes [light, dark]-->
+
+    <!--Primary-->
+    <color name="moon_light_50">#EDE6F4</color>
+    <color name="moon_light_100">#e3c8f6</color>
+    <color name="moon_light_200">#d6aef1</color>
+    <color name="moon_light_300">#C489EB</color>
+    <color name="moon_light_400">#b771e7</color>
+    <color name="moon_light_500">#a54ee1</color>
+    <color name="moon_light_600">#9647cd</color>
+    <color name="moon_light_700">#7537a0</color>
+    <color name="moon_light_800">#5b2b7c</color>
+    <color name="moon_light_900">#45215f</color>
+    <color name="moon_light_disabled_b">#4B2D60</color>
+    <color name="moon_light_disabled_f">#8A7698</color>
+
+    <!--Notification-->
+    <!--success-->
+    <color name="success_50">#e6f9f4</color>
+    <color name="success_100">#b0eddb</color>
+    <color name="success_200">#8ae4ca</color>
+    <color name="success_300">#55d7b2</color>
+    <color name="success_400">#34d0a3</color>
+    <color name="success_500">#01c48c</color>
+    <color name="success_600">#01b27f</color>
+    <color name="success_700">#018b63</color>
+    <color name="success_800">#016c4d</color>
+    <color name="success_900">#00523b</color>
+    <!--info-->
+    <color name="info_50">#e8fafb</color>
+    <color name="info_100">#b8f0f3</color>
+    <color name="info_200">#96e8ed</color>
+    <color name="info_300">#66dee5</color>
+    <color name="info_400">#49d8e0</color>
+    <color name="info_500">#1bced8</color>
+    <color name="info_600">#19bbc5</color>
+    <color name="info_700">#139299</color>
+    <color name="info_800">#0f7177</color>
+    <color name="info_900">#0b575b</color>
+    <!--warning-->
+    <color name="warning_50">#fff0eb</color>
+    <color name="warning_100">#ffd1c2</color>
+    <color name="warning_200">#ffbaa4</color>
+    <color name="warning_300">#ff9b7a</color>
+    <color name="warning_400">#ff8861</color>
+    <color name="warning_500">#ff6a39</color>
+    <color name="warning_600">#e86034</color>
+    <color name="warning_700">#b54b28</color>
+    <color name="warning_800">#8c3a1f</color>
+    <color name="warning_900">#6b2d18</color>
+    <!--danger-->
+    <color name="danger_50">#ffebef</color>
+    <color name="danger_100">#ffc1cd</color>
+    <color name="danger_200">#ffa3b5</color>
+    <color name="danger_300">#ff7993</color>
+    <color name="danger_400">#ff5f7e</color>
+    <color name="danger_500">#ff375e</color>
+    <color name="danger_600">#e83256</color>
+    <color name="danger_700">#b52743</color>
+    <color name="danger_800">#8c1e34</color>
+    <color name="danger_900">#6b1727</color>
+    <!--Notification end-->
+    <!--Neutrals-->
+    <!--white-->
+    <color name="white_500">#FFFFFF</color>
+    <!--Neutral dark-->
+    <color name="neutral_dark_50">#e8e9ea</color>
+    <color name="neutral_dark_100">#b9bbbe</color>
+    <color name="neutral_dark_200">#979b9e</color>
+    <color name="neutral_dark_300">#686d72</color>
+    <color name="neutral_dark_400">#4a5157</color>
+    <color name="neutral_dark_500">#1d252d</color>
+    <color name="neutral_dark_600">#1a2229</color>
+    <color name="neutral_dark_700">#151a20</color>
+    <color name="neutral_dark_800">#101419</color>
+    <color name="neutral_dark_900">#0c1013</color>
+    <!--Neutral light-->
+    <color name="neutral_light_50">#f4f5f6</color>
+    <color name="neutral_light_100">#dce0e2</color>
+    <color name="neutral_light_200">#cbd1d3</color>
+    <color name="neutral_light_300">#b3bbbf</color>
+    <color name="neutral_light_400">#a5aeb3</color>
+    <color name="neutral_light_500">#8e9aa0</color>
+    <color name="neutral_light_600">#818c92</color>
+    <color name="neutral_light_700">#656d72</color>
+    <color name="neutral_light_800">#4e5558</color>
+    <color name="neutral_light_900">#3c4143</color>
+
+    <!--Base-->
+    <!--gradient-->
+    <color name="base_2_gradient_start">#2B2B2B</color>
+    <color name="base_2_gradient_end">#111010</color>
+    <color name="base_3_gradient_start">#33FFFFFF</color>
+    <color name="base_3_gradient_end">#1FFFFFFF</color>
+    <color name="base_4_gradient_start">#0FFFFFFF</color>
+    <color name="base_4_gradient_end">#14FFFFFF</color>
+    <color name="bg_search">#474646</color>
+    <!--solid-->
+    <color name="base_1">#000000</color>
+    <color name="base_2">#1C1C1D</color>
+    <color name="base_3">#29292A</color>
+    <color name="base_4">#3E3E41</color>
+    <!--Base end-->
+    <color name="coverage_disable">#948F8F</color>
 </resources>
