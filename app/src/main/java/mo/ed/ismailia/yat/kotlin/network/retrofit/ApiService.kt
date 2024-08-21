@@ -5,6 +5,6 @@ import retrofit2.Call
 import retrofit2.http.GET
 
 interface ApiService {
-    @GET("rahlat/rahlat/public/api/trips")
-    suspend fun getTrips() : Call<TripsResponse?>
+    @GET("rahlat/rahlat/public/api/trips/")
+    fun getTrips() : Call<TripsResponse?>
 }

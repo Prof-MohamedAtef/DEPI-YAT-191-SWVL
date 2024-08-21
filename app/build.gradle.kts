@@ -61,6 +61,8 @@ dependencies {
     implementation(libs.retrofit) // Retrofit core dependency
     implementation(libs.retrofit.converter.gson) // Retrofit Gson converter
     implementation(libs.retrofit.okhttp3)
+    implementation(libs.lifecycle.viewmodel.compose)
+    implementation(libs.lifecycle.runtime.compose)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

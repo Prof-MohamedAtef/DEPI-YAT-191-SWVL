@@ -6,7 +6,6 @@ import mo.ed.ismailia.yat.kotlin.network.retrofit.ApiService
 import mo.ed.ismailia.yat.kotlin.utils.Constants
 import okhttp3.OkHttpClient
 import retrofit2.Call
-import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -32,13 +31,13 @@ class TripsRepository {
             .build()
         apiService = retrofit.create(ApiService::class.java)
     }
+
     /*
     use getTrips function from ApiService
      */
-
     suspend fun getTrips(callback: (NetworkResultWrapper<TripsResponse?>) -> Unit){
         callback(NetworkResultWrapper.Loading) /// --> Start Loading
-        apiService.getTrips().enqueue(object: Callback<TripsResponse?>{
+        apiService.getTrips().enqueue(object: retrofit2.Callback<TripsResponse?>{
             override fun onResponse(
                 call: Call<TripsResponse?>,
                 response: Response<TripsResponse?>

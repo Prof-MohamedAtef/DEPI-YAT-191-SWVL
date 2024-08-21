@@ -15,6 +15,9 @@
         <action
             android:id="@+id/navigateFrom_signInScreen_to_SignUpScreen"
             app:destination="@+id/signUpFragment"/>
+        <action
+            android:id="@+id/navigate_from_signin_screen_to_trips_screen"
+            app:destination="@+id/tripsFragment"/>
     </fragment>
     <fragment
         android:id="@+id/enterPhoneScreen"
@@ -33,7 +36,8 @@
 
     <fragment
         android:id="@+id/tripsFragment"
-        android:name="Trips"
+        android:name="mo.ed.ismailia.yat.kotlin.compose.features.trips.view.TripsFragment"
+        android:label="TripsFragment"/>
 
 
 </navigation>
