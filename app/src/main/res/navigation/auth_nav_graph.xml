@@ -30,4 +30,10 @@
             android:id="@+id/navigate_From_SignUp_screen_to_sign_in_screen"
             app:destination="@+id/signInScreen"/>
     </fragment>
+
+    <fragment
+        android:id="@+id/tripsFragment"
+        android:name="Trips"
+
+
 </navigation>

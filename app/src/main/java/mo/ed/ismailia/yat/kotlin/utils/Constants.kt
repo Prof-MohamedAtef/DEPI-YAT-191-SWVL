@@ -7,11 +7,17 @@ class Constants {
         const val SHOW_LIST_ITEMS_RANGE = 4
     }
 
-    class SharedConstants{
-        companion object{
+    class SharedConstants {
+        companion object {
             const val USER_NAME = "username"
             const val USER_PHONE = "phone"
             const val USER_EMAIL = "email"
+        }
+    }
+
+    class NetworkConstants {
+        companion object {
+            const val BASE_URL = "http://192.168.100.15:8080/"
         }
     }
 }

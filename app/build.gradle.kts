@@ -58,6 +58,9 @@ dependencies {
     implementation(libs.androidx.material3.android)
     implementation(libs.androidx.compose.tooling.preview)
     implementation(libs.image.coil.compose)
+    implementation(libs.retrofit) // Retrofit core dependency
+    implementation(libs.retrofit.converter.gson) // Retrofit Gson converter
+    implementation(libs.retrofit.okhttp3)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
