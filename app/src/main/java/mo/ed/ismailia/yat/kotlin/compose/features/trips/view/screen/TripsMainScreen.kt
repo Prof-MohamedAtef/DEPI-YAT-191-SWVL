@@ -26,7 +26,6 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import mo.ed.ismailia.yat.kotlin.compose.base.appbar.AppToolBar
 import mo.ed.ismailia.yat.kotlin.compose.base.theme.AppTheme
 import mo.ed.ismailia.yat.kotlin.compose.features.trips.viewmodel.TripsViewModel
-import mo.ed.ismailia.yat.kotlin.data.response.trips.TripsResponse
 import mo.ed.ismailia.yat.kotlin.network.NetworkResultWrapper
 
 @Composable

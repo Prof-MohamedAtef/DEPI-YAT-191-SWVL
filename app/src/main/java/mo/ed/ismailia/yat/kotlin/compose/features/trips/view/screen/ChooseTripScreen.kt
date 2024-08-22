@@ -75,7 +75,7 @@ fun chooseTripBody(
         ) {
             tripsData?.let {
                 items(it.size) { data ->
-                    tripListItem(tripsData[data])
+                    TripCard(tripsData[data])
                 }
             }
         }
