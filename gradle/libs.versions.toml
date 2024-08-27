@@ -25,6 +25,7 @@ okHttp = "4.12.0"
 
 lifecycle_runtime_ktx = "2.6.2"
 lifecycle_runtime_extensions = "2.2.0"
+room = "2.6.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -44,6 +45,10 @@ androidx-ui-android = { group = "androidx.compose.ui", name = "ui-android", vers
 androidx-material3-android = { group = "androidx.compose.material3", name = "material3-android", version.ref = "material3Android" }
 androidx-compose-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "composeToolingPreview" }
 image-coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coilVersion" }
+# Room dependencies
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
 
 #Retrofit
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit_version" }
