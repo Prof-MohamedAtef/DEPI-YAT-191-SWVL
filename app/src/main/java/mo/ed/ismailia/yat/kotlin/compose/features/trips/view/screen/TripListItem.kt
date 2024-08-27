@@ -25,6 +25,7 @@ import mo.ed.ismailia.yat.kotlin.compose.base.AppText
 import mo.ed.ismailia.yat.kotlin.compose.base.FontStyle
 import mo.ed.ismailia.yat.kotlin.data.response.trips.TripsResponseItem
 
+
 @Composable
 fun tripListItem(trip: TripsResponseItem) {
     Box(

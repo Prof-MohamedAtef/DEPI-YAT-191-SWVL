@@ -18,12 +18,12 @@ import androidx.compose.ui.unit.dp
 import mo.ed.ismailia.yat.kotlin.compose.base.appbar.AppToolBar
 import mo.ed.ismailia.yat.kotlin.compose.base.theme.AppTheme
 import mo.ed.ismailia.yat.kotlin.compose.listener.BaseUiInterface
-import mo.ed.ismailia.yat.kotlin.data.response.trips.TripsResponse
+import mo.ed.ismailia.yat.kotlin.data.dto.TripsEntity
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ChooseTripScreen(
-    tripsData: TripsResponse?,
+    tripsData: List<TripsEntity?>?,
     onBackPress: () -> Unit = {},
     tripUiInterface: BaseUiInterface.OnTripSelected? = null
 ) {
@@ -57,7 +57,7 @@ fun ChooseTripScreen(
 
 @Composable
 fun chooseTripBody(
-    tripsData: TripsResponse?,
+    tripsData: List<TripsEntity?>?,
     paddingValues: PaddingValues,
     onTripSelected: BaseUiInterface.OnTripSelected?
 ) {
