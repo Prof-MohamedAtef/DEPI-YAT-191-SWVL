@@ -14,6 +14,7 @@ object AppIcons {
     val ArrowForwardToolbar = R.drawable.ic_arrow_right
     val OldBackArrowIcon = R.drawable.ic_old_back_icon
     val PDFViewerIcon = R.drawable.ic_pdf_launcher_bill_info
+    val walkingPerson = R.drawable.ic_walking_person
 }
 
 /**

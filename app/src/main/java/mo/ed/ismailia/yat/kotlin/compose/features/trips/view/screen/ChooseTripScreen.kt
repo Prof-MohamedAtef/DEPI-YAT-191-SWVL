@@ -33,7 +33,7 @@ fun ChooseTripScreen(
                 .fillMaxSize(),
             topBar = {
                 AppToolBar(
-                    colors = TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = Color.White),
+                    colors = TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = Color.Transparent),
                     modifier = Modifier
                         .clickable {
 
@@ -66,7 +66,7 @@ fun chooseTripBody(
         modifier = Modifier
             .fillMaxSize()
             .padding(paddingValues)
-            .background(color = Color.Red)
+            .background(color = Color.Transparent)
     ) {
         LazyColumn(
             modifier = Modifier
