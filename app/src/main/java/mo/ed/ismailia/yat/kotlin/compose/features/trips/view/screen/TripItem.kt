@@ -30,9 +30,7 @@ fun TripCard(trip: TripsEntity?) {
             colors = CardDefaults.cardColors(
                 containerColor = Color.White
             ),
-            modifier = Modifier
-                .padding(16.dp)
-                .fillMaxWidth()
+            modifier = Modifier.fillMaxWidth()
         ) {
             Box(
                 modifier = Modifier

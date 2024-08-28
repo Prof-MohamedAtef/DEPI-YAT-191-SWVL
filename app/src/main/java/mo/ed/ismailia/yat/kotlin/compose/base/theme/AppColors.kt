@@ -11,6 +11,7 @@ val bg_bottom_sheet_color= Color(0x999647cd)
 val icon_shape_color = Color(0xFFA54EE1)
 
 val swvlGrayCardBorder = Color(0xFFF2F2F2)
+val swvlBackground = Color(0xFFF2F4FF)
 
 val swvlColorDegree = Color(0xFFE81235)
 
